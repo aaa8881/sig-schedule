@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "site": { "name": "시그일정", "owner": "AAA8881", "timezone": "Asia/Seoul" },
+  "categories": [
+    { "id": "work", "name": "개인 작업" },
+    { "id": "study", "name": "공부" },
+    { "id": "exercise", "name": "운동" }
+  ],
+  "projects": [
+    { "id": "beartown", "categoryId": "work", "name": "베어타운", "description": "서버 개선과 업데이트", "groups": [{ "id": "updates", "name": "기능 업데이트", "type": "initiative" }], "notes": [] },
+    { "id": "minefarm", "categoryId": "work", "name": "마인팜", "description": "기획부터 차근차근", "groups": [{ "id": "planning", "name": "기획", "type": "initiative" }], "notes": [] }
+  ],
+  "tasks": [
+    { "id": "bt-lens", "projectId": "beartown", "groupId": "updates", "title": "렌즈 업데이트", "status": "doing", "createdAt": "2026-10-04" },
+    { "id": "bt-hopper", "projectId": "beartown", "groupId": "updates", "title": "업그레이더블 호퍼 업데이트", "status": "doing", "createdAt": "2026-10-04" },
+    { "id": "bt-chest", "projectId": "beartown", "groupId": "updates", "title": "Chest Protect 업데이트", "status": "doing", "createdAt": "2026-10-04" },
+    { "id": "mf-planning", "projectId": "minefarm", "groupId": "planning", "title": "성자와 노드 기획", "status": "todo", "createdAt": "2026-10-04" }
+  ],
+  "routines": [{ "id": "gym", "categoryId": "exercise", "title": "짐 가기", "frequency": "daily", "startDate": "2026-10-04", "checkins": [] }],
+  "entries": [
+    { "id": "initial-20261004", "date": "2026-10-04", "kind": "plan", "title": "첫 계획을 세웠어요", "body": "베어타운의 렌즈·업그레이더블 호퍼·Chest Protect 업데이트는 진행 중으로, 마인팜의 성자와 노드 기획은 할 일로 등록했습니다. 매일 짐 가기 목표도 시작합니다.", "projectIds": ["beartown", "minefarm"], "taskIds": ["bt-lens", "bt-hopper", "bt-chest", "mf-planning"], "source": "사용자가 첫 구성으로 전달한 계획. 실제 완료한 활동 기록은 아직 없음." }
+  ],
+  "thoughts": []
+}

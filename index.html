@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="시그의 프로젝트, 일상의 기록과 생각을 모으는 공간.">
+  <title>시그일정</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%232b54e8'/%3E%3Cpath d='M12 12h16M12 20h10M12 28h16' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#today"><span class="brandmark">S</span>시그일정</a>
+    <div class="owner">AAA8881 <span>의 작업 공간</span></div>
+    <nav aria-label="주 메뉴">
+      <a href="#today" data-view="today"><span>◷</span>오늘</a>
+      <a href="#projects" data-view="projects"><span>▦</span>프로젝트</a>
+      <a href="#records" data-view="records"><span>≡</span>날짜별 기록</a>
+      <a href="#thoughts" data-view="thoughts"><span>◇</span>생각 모음</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="small-label">차곡차곡, 나의 속도로</span><p>작업과 일상의 흔적</p></div>
+  </aside>
+  <main>
+    <header class="topbar"><span id="breadcrumb">나의 작업 공간 / 오늘</span><span class="public-label">공개 기록</span></header>
+    <div id="app" aria-live="polite"><p class="loading">기록을 불러오는 중…</p></div>
+    <footer>시그일정 <span>·</span> <span id="updated"></span></footer>
+  </main>
+</body>
+</html>
