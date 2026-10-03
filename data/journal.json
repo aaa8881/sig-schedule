@@ -11,14 +11,14 @@
     { "id": "minefarm", "categoryId": "work", "name": "마인팜", "description": "기획부터 차근차근", "groups": [{ "id": "planning", "name": "기획", "type": "initiative" }], "notes": [] }
   ],
   "tasks": [
-    { "id": "bt-lens", "projectId": "beartown", "groupId": "updates", "title": "렌즈 업데이트", "status": "doing", "createdAt": "2026-10-04" },
-    { "id": "bt-hopper", "projectId": "beartown", "groupId": "updates", "title": "업그레이더블 호퍼 업데이트", "status": "doing", "createdAt": "2026-10-04" },
-    { "id": "bt-chest", "projectId": "beartown", "groupId": "updates", "title": "Chest Protect 업데이트", "status": "doing", "createdAt": "2026-10-04" },
+    { "id": "bt-lens", "projectId": "beartown", "groupId": "updates", "title": "Lands 업데이트", "aliases": ["렌즈", "랜즈", "땅 관리 플러그인"], "status": "doing", "createdAt": "2026-10-04" },
+    { "id": "bt-hopper", "projectId": "beartown", "groupId": "updates", "title": "Upgradable Hopper 업데이트", "aliases": ["업그레이더블 호퍼", "호퍼", "Upgradable hopper"], "status": "doing", "createdAt": "2026-10-04" },
+    { "id": "bt-chest", "projectId": "beartown", "groupId": "updates", "title": "Chest Protect 업데이트", "aliases": ["체스트 프로텍트", "상자 보호", "chest protect"], "status": "doing", "createdAt": "2026-10-04" },
     { "id": "mf-planning", "projectId": "minefarm", "groupId": "planning", "title": "성자와 노드 기획", "status": "todo", "createdAt": "2026-10-04" }
   ],
   "routines": [{ "id": "gym", "categoryId": "exercise", "title": "짐 가기", "frequency": "daily", "startDate": "2026-10-04", "checkins": [] }],
   "entries": [
-    { "id": "initial-20261004", "date": "2026-10-04", "kind": "plan", "title": "첫 계획을 세웠어요", "body": "베어타운의 렌즈·업그레이더블 호퍼·Chest Protect 업데이트는 진행 중으로, 마인팜의 성자와 노드 기획은 할 일로 등록했습니다. 매일 짐 가기 목표도 시작합니다.", "projectIds": ["beartown", "minefarm"], "taskIds": ["bt-lens", "bt-hopper", "bt-chest", "mf-planning"], "source": "사용자가 첫 구성으로 전달한 계획. 실제 완료한 활동 기록은 아직 없음." }
+    { "id": "initial-20261004", "date": "2026-10-04", "kind": "plan", "title": "첫 계획을 세웠어요", "body": "베어타운의 Lands·Upgradable Hopper·Chest Protect 업데이트는 진행 중으로, 마인팜의 성자와 노드 기획은 할 일로 등록했습니다. 매일 짐 가기 목표도 시작합니다.", "projectIds": ["beartown", "minefarm"], "taskIds": ["bt-lens", "bt-hopper", "bt-chest", "mf-planning"], "source": "사용자가 첫 구성으로 전달한 계획. 실제 완료한 활동 기록은 아직 없음.", "corrections": [{ "date": "2026-10-04", "source": "그 안경의 렌즈 말고 그 땅, 땅 렌즈. 그다음에 업그레이더블 호퍼도 이제 영어로 쓰는 게 맞고 Upgradable hopper. chest protect도 이제 chest protect도 이제 영어로 쓰는 게 맞고.", "summary": "땅 관리 플러그인 Lands로 해석하여 표기 정정. Upgradable Hopper와 Chest Protect는 영어 표기 사용. 작업 상태는 변경하지 않음." }] }
   ],
   "thoughts": []
 }
