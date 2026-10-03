@@ -2,32 +2,23 @@
 
 개인 작업·공부·운동을 프로젝트와 날짜별로 보는 가벼운 공개 기록 사이트. 별도 패키지 설치, DB, 서버 API 없이 동작한다. 기록은 AI에게 자연어로 전달하고 GitHub에서 파일이 바뀌면 Pages가 자동 갱신된다.
 
-## 실행
+## 공개 사이트
+
+[시그일정 웹사이트](https://aaa8881.github.io/sig-schedule/) · [GitHub 저장소](https://github.com/aaa8881/sig-schedule)
+
+GitHub Pages에서 공개 호스팅 중이다. 이 주소는 다른 사람도 접속할 수 있으며 개발 PC가 꺼져 있어도 볼 수 있다. main 브랜치에 변경을 올리면 GitHub Actions가 검증 후 자동 배포한다.
+
+## 로컬 미리보기
 
 `node scripts/serve.cjs` → http://127.0.0.1:4173
 
 검증/공개 파일 생성: `node --check app.js` → `node scripts/build.cjs`.
 
-## 초기 구성 (2026-10-04)
+`127.0.0.1`은 실행 중인 컴퓨터에서만 접속하는 개발용 주소다. 외부에 공유할 때는 위 공개 사이트 주소를 사용한다.
 
-- 개인 작업: 베어타운, 마인팜. 공부는 아직 프로젝트 없음.
-- 베어타운: Lands·Upgradable Hopper·Chest Protect 업데이트 진행 중.
-- 마인팜: 성자와 노드 기획 할 일. 완료 활동으로 등록하지 않음.
-- 운동: 매일 짐 가기. 달성 기록 없음.
-- 생각 없음. 첫 날짜별 기록은 실제 완료가 아닌 초기 계획.
-- 하위 버전/프로젝트, 미분류 기타 작업, 프로젝트별 기타 메모 지원.
-- '성자와 노드 기획'은 사용자 음성 입력 표기를 보존함. '렌즈'는 사용자의 땅 관리 설명에 따라 Lands로 해석해 정정. 한국어 발음/축약어는 aliases로 기존 작업에 연결.
+## 자동 배포
 
-## GitHub Pages 연결
-
-대상 계정: `AAA8881`. 제안 저장소: `sig-schedule`. 원격에 같은 이름이 이미 있으면 내용을 덮어쓰지 말고 확인한다.
-
-1. GitHub 공식 인증을 완료하고 실제 로그인 계정이 일치하는지 확인한다. 토큰을 대화로 받지 않는다.
-2. 이 폴더만 별도 Git 저장소로 등록한다. 상위 Minecraft 서버 폴더를 공개 저장소에 추가하지 않는다.
-3. 공개 저장소로 push하고 저장소 Settings → Pages → Source에서 GitHub Actions를 선택한다.
-4. Actions의 Publish 시그일정 성공을 확인하고 반환된 Pages 주소를 연다.
-
-`.github/workflows/pages.yml`은 변경 시 검증 후 `dist/`의 HTML/CSS/JS/기록만 공개한다. 외부 프레임워크나 빌드 의존성은 없다. 배포되면 통상 주소는 `https://aaa8881.github.io/sig-schedule/`이며 실제 성공 전에는 이 주소가 동작한다고 보고하지 않는다.
+`.github/workflows/pages.yml`은 변경 시 검증 후 `dist/`의 HTML/CSS/JS/기록만 공개한다. Pages의 배포 소스는 GitHub Actions로 설정되어 있다. 외부 프레임워크나 빌드 의존성은 없다. 사이트 업데이트 완료는 Actions 성공과 공개 주소의 반영까지 확인한다.
 
 ## 이후 사용
 
